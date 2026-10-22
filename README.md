@@ -108,3 +108,6 @@ Das ursprüngliche Schauplatzschema wurde durch eine echte Leaflet-/OpenStreetMa
 Kartenprüfung: echte OSM-Kacheln lokal im Browser geladen; Standortwechsel per Enter, Zoom und Rücksetzen geprüft.
 
 Bildvergleich ergänzt: echte Bilder von 1908 (Publikationsjahr) und 2023 ersetzen die Farbflächen. Frühere Testnotizen zu Platzhaltern beschreiben die Vorversion.
+
+## Tonergänzung: Lotte Lenya / Mackie Messer
+Der Hörraum spielt nun die vom Nutzer bereitgestellte MP3 unter `assets/audio/mackie-messer-lotte-lenya.mp3`. Kein Autoplay, keine Wiederholungsschleife; native Audiosteuerung plus Play/Pause-Knopf. Die Datei wurde unverändert übernommen. Im Text sind Werkurheber, Herkunft und die zeitliche Differenz zwischen dem Romanjahr 1927 und der Uraufführung 1928 genannt. Aufnahmejahr und Label sind nicht belegt. Inhaltsbeschreibung und Hörfragen stehen direkt beim Player; ein wortgetreues Liedtranskript ist nicht enthalten. Die früher dokumentierte synthetische Klangdemo wird nicht mehr abgespielt.

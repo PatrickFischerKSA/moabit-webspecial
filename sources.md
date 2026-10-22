@@ -150,3 +150,18 @@ Hinweis: Der weiter oben dokumentierte Eintrag „Schauplatzschema“ beschreibt
 - Vergleich: derselbe Eckbau des Kriminalgerichts (Kuppel und Eingang) an Rathenower Strasse / Turmstrasse. Kameraposition und Brennweite unterscheiden sich; keine deckungsgleiche Vermessung und kein behaupteter Zustand genau 1927. Als 1908 wird das Publikationsjahr, nicht ein erfundenes Aufnahmedatum bezeichnet.
 
 Das hier dokumentierte Bildpaar ersetzt die früheren grafischen Damals-/Heute-Platzhalter vollständig. Die alte Platzhalter-Zeile im Demomedienregister beschreibt nur die Vorversion.
+
+## [7] Ton: Die Moritat von Mackie Messer
+- Urheber: Kurt Weill (Musik); Bertolt Brecht (Text); Lotte Lenya (Gesang laut Nutzerangabe / bereitgestelltem Dateinamen)
+- Titel: Die Moritat von Mackie Messer, aus Die Dreigroschenoper
+- Jahr: Werk 1928; genaues Aufnahmedatum der MP3 nicht dokumentiert
+- Institution / Herkunft der Datei: vom Nutzer zur Einbindung bereitgestellte MP3; Label und Veröffentlichung nicht dokumentiert
+- URL der Aufnahme: keine externe Quelladresse mitgeliefert
+- Lokale Datei: assets/audio/mackie-messer-lotte-lenya.mp3
+- URL Werkdaten: https://www.kwf.org/works/die-dreigroschenoper/ (Kurt Weill Foundation for Music)
+- Abrufdatum / Übernahme: 22.10.2026
+- Lizenz / Status: Nutzerdatei zur Einbindung bereitgestellt; keine offene Lizenz ausgewiesen. Urheber- und Leistungsschutzrechte werden nicht als gemeinfrei bezeichnet.
+- Bearbeitung: MP3 unverändert übernommen, kein Schnitt, keine Transkription oder Liedtextübernahme
+- Verwendung: Audioplayer im Hörraum mit explizitem Start, Pause, Lautstärke und Zeitleiste; redaktionelle Inhaltsbeschreibung und Hörfragen
+- Historische Einordnung: Uraufführung der Dreigroschenoper am 31.08.1928 in Berlin laut Werkverzeichnis der Kurt Weill Foundation. Damit nach dem Handlungsjahr des Romans. Keine Behauptung, dass die Aufnahme von 1928 stammt oder die Musik im Roman vorkommt.
+- Vorversion: Der synthetische achtsekündige Raumklang ist im Hörraum durch diese Aufnahme ersetzt. Die alte Demodatei bleibt als ungenutztes Arbeitsmaterial im Assetordner.
