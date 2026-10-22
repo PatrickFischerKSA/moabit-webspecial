@@ -103,3 +103,22 @@ Die Deutungen zu Schlüsseln, Wahrheit, Geheimhaltung und Handlungsspielräumen 
 - Verwendung: räumliche Beziehung von Haftanstalt, Kriminalgericht und Stadtumfeld. Bildunterschriften nennen Urheber, Datum, Quelle und Lizenz.
 - Grenze: Aufnahmen von 2024, kein Beleg für einen unveränderten Zustand im Oktober 2026, keine historische Rekonstruktion von 1927 und kein Einblick in den Haftalltag.
 - Weitergabe: Bildnachweise und Lizenzlinks bei Wiederveröffentlichung erhalten. Die Fotolizenz betrifft die Fotos; sie ist keine pauschale Lizenz für den Roman oder die übrigen Projektbestandteile.
+
+## [5] Geografische Schauplatzkarte
+- Urheber / Institution: OpenStreetMap-Mitwirkende / OpenStreetMap Foundation; Land Berlin; Wikipedia-Mitwirkende (Gebäudekoordinaten); Leaflet-Mitwirkende (Software)
+- Titel: OpenStreetMap Standardkarte; Standort JVA Moabit; Anfahrt Kriminalgericht Moabit
+- Jahr: laufend aktualisierte Karte; Quellenstand 2026
+- URL Kartendaten und Lizenz: https://www.openstreetmap.org/copyright (ODbL)
+- URL Kachelnutzungsbedingungen: https://operations.osmfoundation.org/policies/tiles/
+- URL JVA-Adresse: https://service.berlin.de/standort/351080/
+- URL Gerichtsadresse: https://www.berlin.de/staatsanwaltschaft/service/standorte-gebaeude/kriminalgericht-moabit/artikel.428004.php
+- URL Gebäudekoordinaten JVA: https://de.wikipedia.org/wiki/Justizvollzugsanstalt_Moabit – 52.524694444444, 13.35475
+- URL Gebäudekoordinaten Gericht: https://de.wikipedia.org/wiki/Kriminalgericht_Moabit – 52.526388888889, 13.352777777778
+- Abrufdatum: 22.10.2026
+- Lizenz: OSM-Daten ODbL, sichtbare Attribution auf und unter der Karte. Koordinaten als einzelne geografische Fakten; keine Wikipedia-Textübernahme. Leaflet 1.9.4 BSD-2-Clause, Lizenzdatei unter assets/vendor/leaflet/LICENSE.txt.
+- Softwarequelle: https://leafletjs.com/download und https://github.com/Leaflet/Leaflet/tree/v1.9.4
+- Verwendung: heutige geografische Lage der realen Gebäude; Adressen mit offiziellen Berliner Quellen abgeglichen. Keine Wegführung durch die Anstalt, keine Aussage über Besuchereingänge.
+- Grenze: Fiktive Wohnorte und historisch nicht präzise recherchierte Nachtlokale werden nicht als exakte Punkte ausgegeben. Die aktuelle Strassenkarte rekonstruiert nicht 1927.
+- Technisch: HTTPS, normaler Browsercache und Referer, keine Massenabfragen, kein Offline-Download; Kacheln erst beim Kartenabschnitt anfordern. Keine Tracker. Kartenanfragen übertragen technisch unter anderem IP-Adresse und Referer an den Kachelanbieter.
+
+Hinweis: Der weiter oben dokumentierte Eintrag „Schauplatzschema“ beschreibt die entfernte Vorversion. Die Strassenkarte ersetzt dieses Schema vollständig.

@@ -11,15 +11,46 @@ document.querySelectorAll('[data-hypothesis]').forEach(button=>button.addEventLi
  box.replaceChildren(); const title=document.createElement('strong'),p=document.createElement('p'),source=document.createElement('p'),link=document.createElement('a');
  title.textContent=item.title;p.textContent=item.text;source.textContent=item.source;link.href='#q1';link.textContent='Zur Primärquelle [1]';box.append(title,p,source,link);
 }));
-const places={
- jva:['1 / Untersuchungshaftanstalt','Historischer Ort. Bau 1877–1881; belegt seit 1881. Die hier gezeigte Position ist schematisch. Quelle: JVA Moabit [2].'],
- home:['2 / Familie Ritter','Fiktionaler Wohnort im Roman am Rand der Gefängnismauer. Keine dokumentierte Wohnung einer historischen Familie und keine behauptete Hausadresse. Quelle: PDF-Blatt 102 [1].'],
- night:['3 / Charlys Nachtleben','Literarischer Handlungsraum: Chausseepalast und später Moka Efti werden im Roman genannt. Der Marker bündelt diese Orte nur schematisch. Historische Standorte und zeitliche Passung sind offen zu recherchieren. Quelle: PDF-Blätter 99–106 [1].']
+// Reale Gebäude-Koordinaten; fiktionale Wohn- und Nachtlokale werden nicht verortet.
+const mapPlaces = {
+ jva: {number:1, name:'JVA Moabit', coordinates:[52.524694444444,13.35475], description:'Alt-Moabit 12a, 10559 Berlin. Markiert ist der Gebäudekomplex, kein Besuchereingang. Historischer Bau und heutiger Standort sind belegt. Quellen [2] und [5].'},
+ court: {number:2, name:'Kriminalgericht Moabit', coordinates:[52.526388888889,13.352777777778], description:'Turmstrasse 91, 10559 Berlin. Der reale Gerichtsstandort liegt unmittelbar neben dem Haftkomplex. Die Markierung bezeichnet das Gebäude, keinen gesondert geprüften Zugang. Quelle [5].'}
 };
-document.querySelectorAll('[data-place]').forEach(button=>button.addEventListener('click',()=>{
- document.querySelectorAll('[data-place]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));
- const data=places[button.dataset.place],box=document.querySelector('#place-feedback'),h=document.createElement('h3'),p=document.createElement('p');h.textContent=data[0];p.textContent=data[1];box.replaceChildren(h,p);
-}));
+const mapElement=document.querySelector('#geo-map'),mapStatus=document.querySelector('#map-status');
+let streetMap=null;
+const mapMarkers={};
+function showMapPlace(key,move=true){
+ const place=mapPlaces[key];
+ document.querySelectorAll('[data-map-place]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.mapPlace===key)));
+ const heading=document.createElement('h3'),p=document.createElement('p'),link=document.createElement('a');
+ heading.textContent=`${place.number} / ${place.name}`;p.textContent=place.description;link.href='#q5';link.textContent='Standort- und Kartennachweise [5]';
+ document.querySelector('#place-feedback').replaceChildren(heading,p,link);
+ if(move&&ensureStreetMap()){streetMap.setView(place.coordinates,17,{animate:false});mapMarkers[key].openPopup();}
+}
+function ensureStreetMap(){
+ if(streetMap)return true;
+ if(!window.L){mapStatus.textContent='Die interaktive Karte ist nicht verfügbar. Die Standortangaben und der Link zu OpenStreetMap bleiben nutzbar.';return false;}
+ mapElement.replaceChildren();
+ streetMap=L.map(mapElement,{scrollWheelZoom:false,zoomControl:true,keyboard:true,minZoom:11,maxZoom:19,attributionControl:true}).setView([52.5255,13.354],16);
+ streetMap.attributionControl.setPrefix(false);
+ L.control.scale({imperial:false}).addTo(streetMap);
+ const tiles=L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>-Mitwirkende',referrerPolicy:'strict-origin-when-cross-origin'}).addTo(streetMap);
+ tiles.on('tileerror',()=>{mapStatus.textContent='Einige Kartenkacheln konnten nicht geladen werden. Standortangaben bleiben verfügbar; die Karte lässt sich auch direkt auf OpenStreetMap öffnen.';});
+ streetMap.zoomControl.setPosition('topleft');
+ const controls=mapElement.querySelectorAll('.leaflet-control-zoom a');
+ controls[0].setAttribute('aria-label','Karte vergrössern');controls[0].title='Karte vergrössern';controls[1].setAttribute('aria-label','Karte verkleinern');controls[1].title='Karte verkleinern';
+ Object.entries(mapPlaces).forEach(([key,place])=>{
+  const marker=L.marker(place.coordinates,{icon:L.divIcon({className:'geo-marker',html:`<span>${place.number}</span>`,iconSize:[38,38],iconAnchor:[19,19]}),title:place.name,alt:place.name,keyboard:true}).addTo(streetMap);
+  marker.getElement().setAttribute('aria-label',place.name);
+  const popup=document.createElement('div'),title=document.createElement('strong'),address=document.createElement('p');title.textContent=place.name;address.textContent=key==='jva'?'Alt-Moabit 12a':'Turmstrasse 91';popup.append(title,address);marker.bindPopup(popup);marker.on('click',()=>showMapPlace(key,false));mapMarkers[key]=marker;
+ });
+ streetMap.fitBounds(Object.values(mapPlaces).map(p=>p.coordinates),{padding:[65,65],maxZoom:16,animate:false});
+ return true;
+}
+document.querySelectorAll('[data-map-place]').forEach(button=>button.addEventListener('click',()=>showMapPlace(button.dataset.mapPlace)));
+document.querySelector('#map-reset').addEventListener('click',()=>{if(ensureStreetMap()){streetMap.closePopup();streetMap.fitBounds(Object.values(mapPlaces).map(p=>p.coordinates),{padding:[65,65],maxZoom:16,animate:false});}});
+// Erst in der Nähe der Karte Kacheln laden; kein Vorladen oder Offline-Download.
+if('IntersectionObserver' in window){const mapObserver=new IntersectionObserver(entries=>{if(entries.some(e=>e.isIntersecting)){ensureStreetMap();mapObserver.disconnect();}},{rootMargin:'150px'});mapObserver.observe(mapElement);}else ensureStreetMap();
 const range=document.querySelector('#compare');range.addEventListener('input',()=>{document.querySelector('#compare-stage').style.setProperty('--split',`${range.value}%`);document.querySelector('#compare-value').value=`${range.value} %`;});
 const audio=document.querySelector('#audio'),audioButton=document.querySelector('#audio-toggle');audioButton.hidden=false;
 audioButton.addEventListener('click',async()=>{if(audio.paused){try{await audio.play();}catch{audioButton.textContent='Audio nicht verfügbar – Transkript öffnen';}}else audio.pause();});

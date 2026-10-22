@@ -1,6 +1,6 @@
 # MOABIT – Was geschieht hinter verschlossenen Türen?
 
-**Auf die Schnelle generierte Demoversion. Dies ist ausdrücklich nicht das als ausgereiftes Produkt erwartete Ergebnis.** Die statische Musterversion funktioniert ohne Build, Konto, API-Key, CDN oder Tracker. Inhalte und Interaktionen liegen vollständig lokal. Bilder, Videoaufnahmen und historische Detailrecherche bleiben teilweise offen und sind entsprechend markiert.
+**Auf die Schnelle generierte Demoversion. Dies ist ausdrücklich nicht das als ausgereiftes Produkt erwartete Ergebnis.** Die statische Musterversion funktioniert ohne Build, Konto, API-Key, CDN oder Tracker. Inhalte, Interaktionen und Leaflet liegen lokal; nur die Kartenkacheln werden bei Bedarf von OpenStreetMap geladen. Bilder, Videoaufnahmen und historische Detailrecherche bleiben teilweise offen und sind entsprechend markiert.
 
 ## Start
 `index.html` direkt im Browser öffnen. Alle Kernfunktionen nutzen relative Pfade; es gibt kein `fetch`, das unter `file://` scheitern könnte. Für Video, Untertitel und Tests empfiehlt sich ein lokaler Webserver:
@@ -51,8 +51,12 @@ Den `src` des Audioelements auf eine eigene WAV- oder MP3-Datei in `assets/audio
 ### Vorher-Nachher-Vergleich
 Historische Aufnahme und eigene aktuelle Aufnahme erst nach Lizenz-, Datums- und Standortprüfung einsetzen. In `.compare-base` und `.compare-before` je ein passendes Bild einfügen (oder lokale Hintergrundbilder definieren); beide gleich gross und mit demselben Bildausschnitt darstellen. Beschriftungen und Bildnachweise aktualisieren. Der Regler verändert `--split`; die Struktur und Klasse `.compare-before` erhalten. Derzeit sind beide Flächen deutlich beschriftete grafische Platzhalter, keine angeblichen Archivbilder.
 
-### Schauplatzkarte
-Die Offline-SVG benötigt keine Kartenbibliothek, keine Tiles und keine Datenlizenz eines Kartendienstes. Sie ist bewusst schematisch, keine georeferenzierte Stadtkarte. Historisch belegte Orte sind rund, literarische/fiktionale Setzungen eckig gestrichelt. Markerschaltflächen sind per Tab, Enter und Leertaste bedienbar. Für neue Orte Button, Beschreibung in `script.js` und Quellenstatus gemeinsam ergänzen. Eine spätere geografische Karte erfordert verifizierte Koordinaten und klare Kartendatenlizenz.
+### Echte Schauplatzkarte
+Leaflet 1.9.4 liegt unter `assets/vendor/leaflet/` (BSD-2-Clause; Lizenzdatei enthalten). Die interaktive Strassenkarte lädt sichtbare Kacheln von `https://tile.openstreetmap.org/` erst beim Annähern an den Kartenabschnitt. Daher ist eine Internetverbindung notwendig. Es gibt keine API-Keys oder CDN-Skripte. Keine Kacheln vorladen, herunterladen oder für Offline-Pakete sammeln. Browsercache und Referer bleiben aktiviert; OSM-Attribution muss sichtbar bleiben. Nutzungsregeln: https://operations.osmfoundation.org/policies/tiles/ . Bei grösserem Publikumsverkehr einen geeigneten Kartenanbieter wählen.
+
+Die zwei realen Gebäude sind JVA Moabit und Kriminalgericht Moabit. Koordinaten und Beschreibungen stehen in `mapPlaces` in `script.js`. Adressen und Koordinatenquellen sind unter [5] in sources.md dokumentiert. Marker sind Gebäude-Markierungen, keine Eingänge. Fiktionale Orte ohne gesicherte Adresse bleiben in einer separaten Textnotiz und bekommen keine erfundenen Geokoordinaten. Die Kartengrundlage zeigt heutige Strassen, nicht den historischen Stadtplan von 1927.
+
+Bedienung: ziehen / Touch zum Verschieben, + und − zum Zoomen; per Tastatur Pfeile sowie +/−. Das Mausrad scrollt weiterhin die Seite. Markerschaltflächen und Standortliste funktionieren per Tastatur. „Beide Orte anzeigen“ setzt den Ausschnitt zurück. Ohne JavaScript oder bei Kachelausfall bleiben Standortangaben und ein Link zur OSM-Karte verfügbar. Beim lokalen Test HTTP-Server statt `file://` verwenden, damit Kartenanfragen einen gültigen Referer senden.
 
 ## GitHub Pages
 1. Den **Inhalt dieses Ordners** in das Wurzelverzeichnis eines neuen GitHub-Repositories laden. Die Roman-PDF und private Originalaufnahmen nicht hochladen.
@@ -78,10 +82,10 @@ Veröffentlichung aus dem Branch `main`, Verzeichnis `/ (root)`. Für eine öffe
 8. Notizfeld leer herunterladen: verständliche Meldung. Danach Text eingeben und herunterladen. Inhalt der TXT-Datei vergleichen; es wird nichts gespeichert oder gesendet.
 9. Betriebssystemoption „Bewegung reduzieren“ aktivieren: keine Scrollanimationen. JavaScript deaktivieren: alle Texte, Quellen, Vergleichsbilder und native Audiosteuerung bleiben sichtbar; JS-Interaktionen sind dann nicht verfügbar.
 10. Nach Einfügen eines Videos: Play/Pause, defekte Datei, Poster-Fallback und echte Untertitel testen. Aktuell ist kein echtes Video enthalten.
-11. Netzwerkpanel: keine automatischen Anfragen an Drittanbieter. Externe Quellen öffnen erst nach Klick. Auf GitHub Pages selbst kann der Hostinganbieter technische Zugriffe protokollieren.
+11. Netzwerkpanel: Kartenkacheln werden im Kartenabschnitt von OpenStreetMap geladen. Weitere externe Quellen öffnen erst nach Klick. Auf GitHub Pages selbst kann der Hostinganbieter technische Zugriffe protokollieren.
 
 ## Bekannte Grenzen
-Keine vollständige WCAG-Zertifizierung oder Screenreader-Prüfung. Schematische statt geografisch genauer Karte. Kein historisches Archivbild, zwei lizenzierte Berlin-Luftbilder von 2024; weitere eigene Berlin-Aufnahmen fehlen. Kein eindeutiger Todesnachweis im Roman. Die Demo ist eine redaktionelle Auswahl, keine vollständige wissenschaftliche Interpretation.
+Keine vollständige WCAG-Zertifizierung oder Screenreader-Prüfung. Geografische Strassenkarte mit zwei realen Gebäude-Markierungen; keine historische Karte von 1927. Kein historisches Archivbild, zwei lizenzierte Berlin-Luftbilder von 2024; weitere eigene Berlin-Aufnahmen fehlen. Kein eindeutiger Todesnachweis im Roman. Die Demo ist eine redaktionelle Auswahl, keine vollständige wissenschaftliche Interpretation.
 
 ## Durchgeführte Prüfung am 22.10.2026
 - JavaScript-Syntaxprüfung mit `node --check`: bestanden.
@@ -95,3 +99,8 @@ Keine vollständige WCAG-Zertifizierung oder Screenreader-Prüfung. Schematische
 
 ## Ergänzung: Fotos der heutigen Haftanstalt
 Zwei Luftaufnahmen von A.Savin vom 29.07.2024 sind im Stadtabschnitt integriert. Beide liegen lokal, werden bei Bedarf nachgeladen und haben Alternativtexte sowie sichtbare Bildnachweise. Sie sind unter der Lizenz Freie Kunst 1.3 veröffentlicht; vollständige Angaben stehen unter [4] in sources.md. Die Dateien wurden ausschliesslich verkleinert und komprimiert. Beim Austausch oder Weitergeben Bildnachweise, Quellen und Lizenzlinks erhalten. Die Aufnahmen ersetzen kein standortgleiches historisches Vergleichspaar.
+
+## Kartenupdate
+Das ursprüngliche Schauplatzschema wurde durch eine echte Leaflet-/OpenStreetMap-Strassenkarte ersetzt. Frühere Testnotizen zu drei schematischen Markern beschreiben die Vorversion. Aktuell gibt es zwei geografisch verortete Gebäude und eine separate Notiz zu fiktionalen Orten.
+
+Kartenprüfung: echte OSM-Kacheln lokal im Browser geladen; Standortwechsel per Enter, Zoom und Rücksetzen geprüft.
