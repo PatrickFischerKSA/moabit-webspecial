@@ -122,3 +122,31 @@ Die Deutungen zu Schlüsseln, Wahrheit, Geheimhaltung und Handlungsspielräumen 
 - Technisch: HTTPS, normaler Browsercache und Referer, keine Massenabfragen, kein Offline-Download; Kacheln erst beim Kartenabschnitt anfordern. Keine Tracker. Kartenanfragen übertragen technisch unter anderem IP-Adresse und Referer an den Kachelanbieter.
 
 Hinweis: Der weiter oben dokumentierte Eintrag „Schauplatzschema“ beschreibt die entfernte Vorversion. Die Strassenkarte ersetzt dieses Schema vollständig.
+
+## [6a] Historische Fotografie für den Vergleich
+- Urheber: Fotograf auf der Quellenseite nicht genannt; Beitrag von Carl Vohl
+- Titel: Abb. 1, Ansicht der Ecke Rathenower und Turmstrasse; in „Das neue Kriminalgericht in Berlin-Moabit“
+- Jahr: veröffentlicht 1908; genaues Aufnahmedatum nicht bekannt (spätestens 1908)
+- Institution: Politechnika Wrocławska; Dolnośląska Biblioteka Cyfrowa; historischer Verlag Wilhelm Ernst & Sohn; Herausgabe unter Mitwirkung des Ministeriums der Öffentlichen Arbeiten
+- Publikation: Zeitschrift für Bauwesen, Jahrgang LVIII, Heft VII–IX, Sp. 329–330, Abbildung 1; PDF-Blatt 1 des Digitalisats
+- URL: https://dbc.wroc.pl/dlibra/publication/1792/edition/1939/content
+- Direktes Digitalisat: https://dbc.wroc.pl/Content/1939/PDF/1792.pdf
+- Archivmetadaten: https://dbc.wroc.pl/dlibra/oai-pmh-repository.xml?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:dbc.wroc.pl:1939
+- Abrufdatum: 22.10.2026
+- Lizenz / Rechte: Archiv kennzeichnet das Werk in dc:rights ausdrücklich als „Domena publiczna (Public domain)“ und „Dla wszystkich bez ograniczeń“.
+- Lokale Datei: assets/images/kriminalgericht-1908.jpg; zugehörige Quellenseite und unveränderte Archivmetadaten unter assets/documents/
+- Bearbeitung: Ausschnitt der gedruckten Abbildung aus der gerenderten ersten PDF-Seite; JPEG-Komprimierung. Keine Retusche, keine KI-Bearbeitung, keine Perspektivverformung.
+
+## [6b] Foto für den heutigen Vergleich
+- Urheber: Gerd Eichmann
+- Titel: Berlin-Kriminalgericht Moabit-Turmstr-Nr91-04-2023-gje.jpg
+- Jahr / Aufnahmedatum: 28.07.2023, 08:12:05 laut Commons-Dateiseite
+- Institution / Plattform: Wikimedia Commons; Eigenaufnahme des Fotografen
+- URL: https://commons.wikimedia.org/wiki/File:Berlin-Kriminalgericht_Moabit-Turmstr-Nr91-04-2023-gje.jpg
+- Abrufdatum: 22.10.2026
+- Lizenz: Creative Commons Namensnennung 4.0 International, https://creativecommons.org/licenses/by/4.0/
+- Lokale Datei: assets/images/kriminalgericht-2023.jpg
+- Bearbeitung: proportional verkleinert und JPEG-komprimiert; keine inhaltliche Retusche.
+- Vergleich: derselbe Eckbau des Kriminalgerichts (Kuppel und Eingang) an Rathenower Strasse / Turmstrasse. Kameraposition und Brennweite unterscheiden sich; keine deckungsgleiche Vermessung und kein behaupteter Zustand genau 1927. Als 1908 wird das Publikationsjahr, nicht ein erfundenes Aufnahmedatum bezeichnet.
+
+Das hier dokumentierte Bildpaar ersetzt die früheren grafischen Damals-/Heute-Platzhalter vollständig. Die alte Platzhalter-Zeile im Demomedienregister beschreibt nur die Vorversion.

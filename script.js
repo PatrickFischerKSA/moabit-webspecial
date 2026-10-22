@@ -51,7 +51,9 @@ document.querySelectorAll('[data-map-place]').forEach(button=>button.addEventLis
 document.querySelector('#map-reset').addEventListener('click',()=>{if(ensureStreetMap()){streetMap.closePopup();streetMap.fitBounds(Object.values(mapPlaces).map(p=>p.coordinates),{padding:[65,65],maxZoom:16,animate:false});}});
 // Erst in der Nähe der Karte Kacheln laden; kein Vorladen oder Offline-Download.
 if('IntersectionObserver' in window){const mapObserver=new IntersectionObserver(entries=>{if(entries.some(e=>e.isIntersecting)){ensureStreetMap();mapObserver.disconnect();}},{rootMargin:'150px'});mapObserver.observe(mapElement);}else ensureStreetMap();
-const range=document.querySelector('#compare');range.addEventListener('input',()=>{document.querySelector('#compare-stage').style.setProperty('--split',`${range.value}%`);document.querySelector('#compare-value').value=`${range.value} %`;});
+const range=document.querySelector('#compare');
+function updateComparison(){const value=Number(range.value);document.querySelector('#compare-stage').style.setProperty('--split',`${value}%`);document.querySelector('#compare-value').value=`${value} %`;document.querySelector('.before-date').hidden=value<20;document.querySelector('.after-date').hidden=value>80;document.querySelectorAll('[data-compare]').forEach(b=>b.setAttribute('aria-pressed',String(Number(b.dataset.compare)===value)));}
+range.addEventListener('input',updateComparison);document.querySelectorAll('[data-compare]').forEach(b=>b.addEventListener('click',()=>{range.value=b.dataset.compare;updateComparison();}));updateComparison();
 const audio=document.querySelector('#audio'),audioButton=document.querySelector('#audio-toggle');audioButton.hidden=false;
 audioButton.addEventListener('click',async()=>{if(audio.paused){try{await audio.play();}catch{audioButton.textContent='Audio nicht verfügbar – Transkript öffnen';}}else audio.pause();});
 audio.addEventListener('play',()=>audioButton.textContent='Sounddesign pausieren');audio.addEventListener('pause',()=>audioButton.textContent='Sounddesign abspielen');audio.addEventListener('ended',()=>audioButton.textContent='Sounddesign erneut abspielen');

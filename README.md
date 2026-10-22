@@ -48,8 +48,10 @@ Dateien nach `assets/images/`, sprechende Namen verwenden. Mit `<figure>`, `<img
 ### Audio
 Den `src` des Audioelements auf eine eigene WAV- oder MP3-Datei in `assets/audio/` ändern. Die native Steuerung enthält Play/Pause und Lautstärke; ein zusätzlicher Knopf ist vorhanden. Transkript/Klangbeschreibung im anschliessenden `<details>` vollständig aktualisieren. Kein Autoplay. Demo: 8 Sekunden synthetischer Raumton und drei metallische Impulse, keine Stimmen oder Samples. Bei neuem Material Rechte und gegebenenfalls Einwilligungen prüfen und dokumentieren.
 
-### Vorher-Nachher-Vergleich
-Historische Aufnahme und eigene aktuelle Aufnahme erst nach Lizenz-, Datums- und Standortprüfung einsetzen. In `.compare-base` und `.compare-before` je ein passendes Bild einfügen (oder lokale Hintergrundbilder definieren); beide gleich gross und mit demselben Bildausschnitt darstellen. Beschriftungen und Bildnachweise aktualisieren. Der Regler verändert `--split`; die Struktur und Klasse `.compare-before` erhalten. Derzeit sind beide Flächen deutlich beschriftete grafische Platzhalter, keine angeblichen Archivbilder.
+### Fotografischer Vergleich 1908 / 2023
+Im Regler liegen jetzt zwei echte Ansichten desselben Eckbaus des Kriminalgerichts: eine spätestens 1908 angefertigte und 1908 publizierte Fotografie sowie Gerd Eichmanns Foto vom 28.07.2023. Rechte und Quellen sind unter [6] in sources.md dokumentiert. Die Archivmetadaten kennzeichnen das historische Werk als gemeinfrei, das Foto von 2023 steht unter CC BY 4.0. Urheber, Quelle, Lizenz und Bearbeitungsangaben bei Weiterveröffentlichung erhalten.
+
+Die historische Abbildung wurde aus der originalen Druckseite ausgeschnitten. Beide Dateien liegen lokal in assets/images/. Die vollständige Quellenseite und die archivseitigen Metadaten liegen als Nachweis unter assets/documents/. Bilder sind ohne Verzerrung eingepasst. Unterschiedliche Blickwinkel sind im Text benannt; es ist keine pixelgenaue Rekonstruktion. Regler und drei Ansichtsknöpfe zeigen 1908, 2023 oder beide Bilder. Die Quellen bleiben immer unter dem Bild lesbar.
 
 ### Echte Schauplatzkarte
 Leaflet 1.9.4 liegt unter `assets/vendor/leaflet/` (BSD-2-Clause; Lizenzdatei enthalten). Die interaktive Strassenkarte lädt sichtbare Kacheln von `https://tile.openstreetmap.org/` erst beim Annähern an den Kartenabschnitt. Daher ist eine Internetverbindung notwendig. Es gibt keine API-Keys oder CDN-Skripte. Keine Kacheln vorladen, herunterladen oder für Offline-Pakete sammeln. Browsercache und Referer bleiben aktiviert; OSM-Attribution muss sichtbar bleiben. Nutzungsregeln: https://operations.osmfoundation.org/policies/tiles/ . Bei grösserem Publikumsverkehr einen geeigneten Kartenanbieter wählen.
@@ -85,7 +87,7 @@ Veröffentlichung aus dem Branch `main`, Verzeichnis `/ (root)`. Für eine öffe
 11. Netzwerkpanel: Kartenkacheln werden im Kartenabschnitt von OpenStreetMap geladen. Weitere externe Quellen öffnen erst nach Klick. Auf GitHub Pages selbst kann der Hostinganbieter technische Zugriffe protokollieren.
 
 ## Bekannte Grenzen
-Keine vollständige WCAG-Zertifizierung oder Screenreader-Prüfung. Geografische Strassenkarte mit zwei realen Gebäude-Markierungen; keine historische Karte von 1927. Kein historisches Archivbild, zwei lizenzierte Berlin-Luftbilder von 2024; weitere eigene Berlin-Aufnahmen fehlen. Kein eindeutiger Todesnachweis im Roman. Die Demo ist eine redaktionelle Auswahl, keine vollständige wissenschaftliche Interpretation.
+Keine vollständige WCAG-Zertifizierung oder Screenreader-Prüfung. Geografische Strassenkarte mit zwei realen Gebäude-Markierungen; keine historische Karte von 1927. Ein gemeinfreies historisches Foto ist im Vergleich integriert; zwei lizenzierte Berlin-Luftbilder von 2024; weitere eigene Berlin-Aufnahmen fehlen. Kein eindeutiger Todesnachweis im Roman. Die Demo ist eine redaktionelle Auswahl, keine vollständige wissenschaftliche Interpretation.
 
 ## Durchgeführte Prüfung am 22.10.2026
 - JavaScript-Syntaxprüfung mit `node --check`: bestanden.
@@ -104,3 +106,5 @@ Zwei Luftaufnahmen von A.Savin vom 29.07.2024 sind im Stadtabschnitt integriert.
 Das ursprüngliche Schauplatzschema wurde durch eine echte Leaflet-/OpenStreetMap-Strassenkarte ersetzt. Frühere Testnotizen zu drei schematischen Markern beschreiben die Vorversion. Aktuell gibt es zwei geografisch verortete Gebäude und eine separate Notiz zu fiktionalen Orten.
 
 Kartenprüfung: echte OSM-Kacheln lokal im Browser geladen; Standortwechsel per Enter, Zoom und Rücksetzen geprüft.
+
+Bildvergleich ergänzt: echte Bilder von 1908 (Publikationsjahr) und 2023 ersetzen die Farbflächen. Frühere Testnotizen zu Platzhaltern beschreiben die Vorversion.

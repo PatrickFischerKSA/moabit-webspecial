@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://dbc.wroc.pl/style/common/xsl/oai-style.xsl"?>
+<OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/
+         http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd">
+	<responseDate>2026-10-22T17:53:25Z</responseDate>
+	<request identifier="oai:dbc.wroc.pl:1939" metadataPrefix="oai_dc" verb="GetRecord">
+	https://dbc.wroc.pl/oai-pmh-repository.xml</request>
+	<GetRecord>
+	
+  <record>
+	<header>
+		<identifier>oai:dbc.wroc.pl:1939</identifier>
+	    <datestamp>2026-03-06T15:14:08Z</datestamp>
+		  <setSpec>DBC:dbc:fieldsOfScience</setSpec> 	      <setSpec>DBC:dbc</setSpec> 	      <setSpec>DBC:dbc:resources</setSpec> 	      <setSpec>DBC:dbc:DolnoslaskaDigitalLibrary:PWR</setSpec> 	      <setSpec>DBC:dbc:DolnoslaskaDigitalLibrary</setSpec> 	      <setSpec>DBC</setSpec> 	      <setSpec>DBC:dbc:DolnoslaskaDigitalLibrary:PWR:journal:Oth</setSpec> 	      <setSpec>DBC:dbc:DolnoslaskaDigitalLibrary:PWR:journal</setSpec> 	      <setSpec>DBC:dbc:fieldsOfScience:technicalSciences</setSpec> 	      <setSpec>DBC:dbc:resources:magazines:journals</setSpec> 	      <setSpec>DBC:dbc:DolnoslaskaDigitalLibrary:PWR:journal:Oth:zfb</setSpec> 	      <setSpec>DBC:dbc:resources:magazines</setSpec> 	    </header>
+		<metadata>
+	<oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+<dc:title xml:lang="de"><![CDATA[Zeitschrift für Bauwesen, Jr. LVIII H. 7-9]]></dc:title>
+<dc:title xml:lang="en"><![CDATA[Zeitschrift für Bauwesen, Jr. LVIII H. 7-9]]></dc:title>
+<dc:title xml:lang="pl"><![CDATA[Zeitschrift für Bauwesen, Jr. LVIII H. 7-9]]></dc:title>
+<dc:subject xml:lang="de"><![CDATA[budownictwo - czasopismo]]></dc:subject>
+<dc:subject xml:lang="en"><![CDATA[budownictwo - czasopismo]]></dc:subject>
+<dc:subject xml:lang="pl"><![CDATA[budownictwo - czasopismo]]></dc:subject>
+<dc:description xml:lang="de"><![CDATA[Berlin]]></dc:description>
+<dc:description xml:lang="en"><![CDATA[Berlin]]></dc:description>
+<dc:description xml:lang="pl"><![CDATA[Berlin]]></dc:description>
+<dc:publisher><![CDATA[Verlag von Wilhelm Ernst & Sohn]]></dc:publisher>
+<dc:contributor><![CDATA[Ministerium der Öffentlichen Arbeiten]]></dc:contributor>
+<dc:date><![CDATA[1908]]></dc:date>
+<dc:type xml:lang="de"><![CDATA[czasopismo]]></dc:type>
+<dc:type xml:lang="en"><![CDATA[czasopismo]]></dc:type>
+<dc:type xml:lang="pl"><![CDATA[czasopismo]]></dc:type>
+<dc:format xml:lang="de"><![CDATA[image/x.djvu]]></dc:format>
+<dc:format xml:lang="en"><![CDATA[image/x.djvu]]></dc:format>
+<dc:format xml:lang="pl"><![CDATA[image/x.djvu]]></dc:format>
+<dc:identifier><![CDATA[https://dbc.wroc.pl/dlibra/publication/1792/edition/1939/content]]></dc:identifier>
+<dc:identifier><![CDATA[oai:dbc.wroc.pl:1939]]></dc:identifier>
+<dc:source xml:lang="de"><![CDATA[Politechnika Wrocławska]]></dc:source>
+<dc:source xml:lang="de"><![CDATA[<sygn. PWr A405III>]]></dc:source>
+<dc:source xml:lang="de"><![CDATA[http://aleph.bg.pwr.wroc.pl/F/?func=find-b&request=000120240&find_code=SYS&adjacent=N&local_base=TUR&x=44&y=12&filter_code_1=WLN&filter_request_1=&filter_code_2=WYR&filter_request_2=&filter_code_3=WYR&filter_request_3=&filter_code_4=WFT&filter_request_4=&filter_code_5=WSB&filter_request_5=]]></dc:source>
+<dc:source xml:lang="en"><![CDATA[Politechnika Wrocławska]]></dc:source>
+<dc:source xml:lang="en"><![CDATA[<sygn. PWr A405III>]]></dc:source>
+<dc:source xml:lang="en"><![CDATA[http://aleph.bg.pwr.wroc.pl/F/?func=find-b&request=000120240&find_code=SYS&adjacent=N&local_base=TUR&x=44&y=12&filter_code_1=WLN&filter_request_1=&filter_code_2=WYR&filter_request_2=&filter_code_3=WYR&filter_request_3=&filter_code_4=WFT&filter_request_4=&filter_code_5=WSB&filter_request_5=]]></dc:source>
+<dc:source xml:lang="pl"><![CDATA[Politechnika Wrocławska]]></dc:source>
+<dc:source xml:lang="pl"><![CDATA[<sygn. PWr A405III>]]></dc:source>
+<dc:source xml:lang="pl"><![CDATA[http://aleph.bg.pwr.wroc.pl/F/?func=find-b&request=000120240&find_code=SYS&adjacent=N&local_base=TUR&x=44&y=12&filter_code_1=WLN&filter_request_1=&filter_code_2=WYR&filter_request_2=&filter_code_3=WYR&filter_request_3=&filter_code_4=WFT&filter_request_4=&filter_code_5=WSB&filter_request_5=]]></dc:source>
+<dc:language><![CDATA[ger]]></dc:language>
+<dc:relation><![CDATA[Zeitschrift für Bauwesen]]></dc:relation>
+<dc:relation><![CDATA[Zwiększenie dostępności zbiorów PWr (czasopism)]]></dc:relation>
+<dc:relation><![CDATA[oai:dbc.wroc.pl:publication:1792]]></dc:relation>
+<dc:rights xml:lang="de"><![CDATA[Dla wszystkich bez ograniczeń]]></dc:rights>
+<dc:rights xml:lang="de"><![CDATA[Domena publiczna (Public domain)]]></dc:rights>
+<dc:rights xml:lang="en"><![CDATA[Dla wszystkich bez ograniczeń]]></dc:rights>
+<dc:rights xml:lang="en"><![CDATA[Domena publiczna (Public domain)]]></dc:rights>
+<dc:rights xml:lang="pl"><![CDATA[Dla wszystkich bez ograniczeń]]></dc:rights>
+<dc:rights xml:lang="pl"><![CDATA[Domena publiczna (Public domain)]]></dc:rights>
+</oai_dc:dc>
+
+</metadata>
+	  </record>	</GetRecord>
+</OAI-PMH>
