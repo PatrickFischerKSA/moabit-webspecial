@@ -64,3 +64,15 @@ if(video.dataset.src){video.hidden=false;video.src=video.dataset.src;videoButton
 const reduced=window.matchMedia('(prefers-reduced-motion: reduce)');reduced.addEventListener('change',e=>{if(e.matches)video.pause();});
 if('IntersectionObserver' in window&&!reduced.matches){document.documentElement.classList.add('js-motion');const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.remove('pending');observer.unobserve(entry.target);}}),{threshold:.06});document.querySelectorAll('.people article,.voices article,.timeline,.editorial-strip,.today-grid article').forEach(el=>{el.classList.add('reveal','pending');observer.observe(el);});}
 document.querySelector('#download-note').addEventListener('click',()=>{const note=document.querySelector('#reflection').value.trim(),status=document.querySelector('#note-status');if(!note){status.textContent='Bitte zuerst eine Randnotiz eingeben.';document.querySelector('#reflection').focus();return;}const blob=new Blob(['MOABIT – persönliche Randnotiz\n\n'+note+'\n'],{type:'text/plain;charset=utf-8'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='moabit-randnotiz.txt';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);status.textContent='Die Randnotiz wurde zum Download bereitgestellt.';});
+
+// Nutzergewählter Terra-X-Beitrag. Erst nach explizitem Klick externe Inhalte laden.
+const ringVideoContainer=document.querySelector('#ring-video-player');
+function loadRingVideo(start){
+ const frame=document.createElement('iframe');frame.src=`https://www.youtube-nocookie.com/embed/BcXI3nXqSmY?start=${start}&autoplay=0&rel=0`;
+ frame.title='Terra X History: Kriminelle Clans im Berlin der 20er Jahre';frame.allow='encrypted-media; picture-in-picture; fullscreen';frame.allowFullscreen=true;frame.referrerPolicy='strict-origin-when-cross-origin';
+ ringVideoContainer.replaceChildren(frame);document.querySelector('#ring-video-start').hidden=false;document.querySelector('#ring-video-chapter').hidden=false;
+}
+document.querySelector('#load-ring-video').addEventListener('click',()=>loadRingVideo(251));
+document.querySelector('#ring-video-start').addEventListener('click',()=>loadRingVideo(0));
+
+document.querySelector('#ring-video-chapter').addEventListener('click',()=>loadRingVideo(251));

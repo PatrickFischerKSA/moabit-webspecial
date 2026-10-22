@@ -165,3 +165,67 @@ Das hier dokumentierte Bildpaar ersetzt die früheren grafischen Damals-/Heute-P
 - Verwendung: Audioplayer im Hörraum mit explizitem Start, Pause, Lautstärke und Zeitleiste; redaktionelle Inhaltsbeschreibung und Hörfragen
 - Historische Einordnung: Uraufführung der Dreigroschenoper am 31.08.1928 in Berlin laut Werkverzeichnis der Kurt Weill Foundation. Damit nach dem Handlungsjahr des Romans. Keine Behauptung, dass die Aufnahme von 1928 stammt oder die Musik im Roman vorkommt.
 - Vorversion: Der synthetische achtsekündige Raumklang ist im Hörraum durch diese Aufnahme ersetzt. Die alte Demodatei bleibt als ungenutztes Arbeitsmaterial im Assetordner.
+
+## [8] Ringvereine – historische Forschung
+- Urheber: Arthur Hartmann und Klaus von Lampe
+- Titel: The German underworld and the Ringvereine from the 1890s through the 1950s
+- Jahr: 2008 (Global Crime 9, Nr. 1–2, S. 108–135; Verlagsseite nennt Onlineveröffentlichung 27.11.2009)
+- Institution: Global Crime / Taylor & Francis; Autoren seinerzeit HfÖV Bremen und Freie Universität Berlin
+- URL: https://doi.org/10.1080/17440570701862835
+- Abstractquelle: https://www.tandfonline.com/doi/abs/10.1080/17440570701862835?scroll=top&tab=permissions
+- Abrufdatum: 22.10.2026
+- Lizenz: keine offene Volltextlizenz festgestellt; kein Volltext lokal veröffentlicht. Eigenständige kurze Paraphrasen des Abstracts.
+- Belegt: formelle Vereinigungen ehemaliger Strafgefangener, gegenseitige Hilfe, Regeln, Kontakte und Status; mögliche unmittelbare kriminelle Funktionen unter anderem in Prostitution und Erpressung.
+- Grenze: Hier wurde der Abstract ausgewertet; keine Behauptung einer vollständigen Auswertung des zugangsbeschränkten Aufsatzes. Kein Nachweis für Kutschers fiktive Berolina.
+
+## [9] Forschungsressource als lokale Original-PDF
+- Urheber: Klaus von Lampe
+- Titel: „Clans“, „Clankriminalität“ und „organisierte Kriminalität“. Eine Betrachtung aus Sicht der internationalen OK-Forschung
+- Jahr: August 2022
+- Institution / Herausgeber: Forschungsinstitut für öffentliche und private Sicherheit (FÖPS Berlin) der Hochschule für Wirtschaft und Recht Berlin; FÖPS Digital Nr. 9
+- URL: https://doi.org/10.4393/opushwr-3853
+- Originaldatei: https://www.foeps-berlin.org/fileadmin/institut-foeps/Dokumente/FOEPSDIGITAL/FOEPS-Digital_09_vonLampe.pdf
+- Abrufdatum: 22.10.2026
+- Lizenz: CC BY-NC-ND 4.0, https://creativecommons.org/licenses/by-nc-nd/4.0/deed.de
+- Rechtehinweis: vollständige Namensnennung des Autors und Herausgebers im Webspecial; unveränderte Originaldatei; nichtkommerzielles Bildungs-Demoprojekt. Bei späterer kommerzieller Nutzung ist die Datei nicht durch diese Lizenz gedeckt.
+- Lokale Datei: assets/documents/von-lampe-clans-organisierte-kriminalitaet-2022.pdf (56 PDF-Blätter)
+- Verwendete Stellen: gedruckte S. 41–43 (Szenarien zum Verhältnis von Familien und Kriminalität), S. 43–44 (Ringvereinsvergleich und Grenzen von Staatseinflussbehauptungen). Gedruckte S. 41 entspricht PDF-Blatt 42.
+- Grenze: Forschungseinschätzung von 2022, keine aktuelle Vollerhebung der Berliner Szene. Die Tabelle ist eine redaktionelle Paraphrase; die PDF selbst wurde nicht bearbeitet.
+
+## [10] Nutzergewähltes Terra-X-Video
+- Urheber / Redaktion: Terra X History; Autor Arne Peisker; Schnitt Oliver Metel
+- Titel: Kriminelle Clans im Berlin der 20er Jahre | Terra X
+- Jahr / Veröffentlichungsdatum: 19.02.2023 laut offizieller YouTube-Seite
+- Institution: ZDF, Produktion in Zusammenarbeit mit Storyhouse laut offizieller Videobeschreibung
+- URL: https://www.youtube.com/watch?v=BcXI3nXqSmY&t=251s
+- Abrufdatum: 22.10.2026
+- Lizenz / Status: keine freie Filmdatei oder offene Lizenz in der geprüften offiziellen Beschreibung gefunden; kein Download und keine lokale Kopie. Offizielle YouTube-Einbettung über youtube-nocookie.com, Laden nur nach Klick, kein Autoplay.
+- Geprüfte Metadaten: offizieller YouTube-oEmbed bestätigt Titel und Kanal; offizielle Seitenbeschreibung nennt Kapitel 04:11 „Blüte der Ringvereine“, Team und Produktion. Der unerwünschte abschliessende Beistrich der Nutzer-URL wurde entfernt.
+- Verwendung: Lernressource mit Einstieg bei 251 Sekunden; alternativ gesamter Film. Keine Behauptung, den Film vollständig transkribiert oder jede darin enthaltene Aussage unabhängig geprüft zu haben.
+- Medienkritik: Der Videotitel überträgt „Clans“ auf historische Vereine. Das Webspecial behandelt diese Benennung als zu prüfendes Deutungsangebot; es setzt die Organisationsformen nicht gleich.
+
+## [11] Amtliches Lagebild OK 2024 als lokale PDF
+- Urheber: Polizei Berlin, Landeskriminalamt, LKA 41 AE
+- Titel: Lagebild Organisierte Kriminalität Berlin 2024
+- Jahr: Berichtsjahr 2024; im Jahr 2026 öffentlich verfügbar
+- Institution: Polizei Berlin / Land Berlin
+- URL: https://www.berlin.de/polizei/_assets/dienststellen/lka/lagebild-organisierte-kriminalitaet-berlin-2024.pdf
+- Abrufdatum: 22.10.2026
+- Lizenz / Nutzungsbedingung: kein CC-Signet; Impressum erlaubt Nachdruck und sonstige Vervielfältigung, auch auszugsweise, nur mit Quellenangabe des Landeskriminalamtes Berlin (Organisierte Kriminalität, Lagebild OK Berlin 2024, Seite X). Datei unverändert übernommen; Quellen- und Seitenangaben im Webspecial.
+- Lokale Datei: assets/documents/lagebild-organisierte-kriminalitaet-berlin-2024.pdf
+- Fundstellen: gedruckte S. 5 (55 Verfahrenskomplexe); S. 29 (Begriffe und ausdrückliche Abgrenzung von Herkunft allein); S. 30–31 (7 Komplexe mit Clanbezug, davon 4 gegen entsprechende Gruppierungen und 3 gegen verbundene Personen; viermal Rauschgift, je einmal Geldwäsche, Eigentums- und Gewaltkriminalität). PDF-Blatt liegt jeweils um zwei Positionen über der gedruckten Seitenzahl.
+- Grenze: polizeiliche Verfahrenskomplexe und Zuordnungen, keine vollständige Zählung von Gruppen oder Familien und kein Ersatz für rechtskräftige gerichtliche Feststellungen. Keine Verrechnung mit Straftaten- und Tatverdächtigenzahlen des separaten Lagebilds 2025.
+
+## [12] Amtlicher Gegenwartsstand: Clankriminalität 2025
+- Urheber: Senatsverwaltung für Inneres und Sport und Polizei Berlin
+- Titel: Lagebild Clankriminalität Berlin 2025 veröffentlicht
+- Jahr / Datum: 05.06.2026; Berichtsjahr 2025
+- Institution: Land Berlin
+- URL: https://www.berlin.de/sen/inneres/presse/pressemitteilungen/2026/pressemitteilung.1677523.php
+- Abrufdatum: 22.10.2026
+- Lizenz: keine offene Medienlizenz festgestellt; sachliche Paraphrase, keine Bildübernahme
+- Belegt: 952 registrierte Straftaten im Jahr 2025 durch 342 dem Phänomenbereich zugerechnete Tatverdächtige.
+- Grenze: eigener polizeilicher Erfassungsbereich und andere Erhebungseinheit als OK-Komplexe 2024. Keine pauschale Zuschreibung von Straftaten an alle Angehörigen einer Familie, Ethnie oder Herkunftsgruppe.
+
+## Redaktionelle Vergleichsregel
+Historische Vereinigungen, heutige Familienverbände und kriminelle Tätergruppen werden nicht gleichgesetzt. Verglichen werden Mechanismen wie Zugehörigkeit, Ressourcen, Abschottung und Einfluss; die Nachweise müssen jeweils konkrete Personen, Handlungen und Strukturen betreffen. Erkenntnisse aus 2022, Berichtsjahre 2024/2025 und Recherchezeitpunkt 22.10.2026 werden getrennt ausgewiesen. Frühere offene Rechercheaufträge zu den Ringvereinen und zum Gegenwartsbezug sind durch die Ressourcen [8]–[12] teilweise abgearbeitet; konkrete historische Bestechungsfälle bleiben offen.

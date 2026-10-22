@@ -1,6 +1,6 @@
 # MOABIT – Was geschieht hinter verschlossenen Türen?
 
-**Auf die Schnelle generierte Demoversion. Dies ist ausdrücklich nicht das als ausgereiftes Produkt erwartete Ergebnis.** Die statische Musterversion funktioniert ohne Build, Konto, API-Key, CDN oder Tracker. Inhalte, Interaktionen und Leaflet liegen lokal; nur die Kartenkacheln werden bei Bedarf von OpenStreetMap geladen. Bilder, Videoaufnahmen und historische Detailrecherche bleiben teilweise offen und sind entsprechend markiert.
+**Auf die Schnelle generierte Demoversion. Dies ist ausdrücklich nicht das als ausgereiftes Produkt erwartete Ergebnis.** Die statische Musterversion funktioniert ohne Build, Konto, API-Key, CDN oder Tracker. Inhalte, Interaktionen und Leaflet liegen lokal; Kartenkacheln werden bei Bedarf von OpenStreetMap geladen, das YouTube-Video erst nach ausdrücklichem Klick. Bilder, Videoaufnahmen und historische Detailrecherche bleiben teilweise offen und sind entsprechend markiert.
 
 ## Start
 `index.html` direkt im Browser öffnen. Alle Kernfunktionen nutzen relative Pfade; es gibt kein `fetch`, das unter `file://` scheitern könnte. Für Video, Untertitel und Tests empfiehlt sich ein lokaler Webserver:
@@ -111,3 +111,14 @@ Bildvergleich ergänzt: echte Bilder von 1908 (Publikationsjahr) und 2023 ersetz
 
 ## Tonergänzung: Lotte Lenya / Mackie Messer
 Der Hörraum spielt nun die vom Nutzer bereitgestellte MP3 unter `assets/audio/mackie-messer-lotte-lenya.mp3`. Kein Autoplay, keine Wiederholungsschleife; native Audiosteuerung plus Play/Pause-Knopf. Die Datei wurde unverändert übernommen. Im Text sind Werkurheber, Herkunft und die zeitliche Differenz zwischen dem Romanjahr 1927 und der Uraufführung 1928 genannt. Aufnahmejahr und Label sind nicht belegt. Inhaltsbeschreibung und Hörfragen stehen direkt beim Player; ein wortgetreues Liedtranskript ist nicht enthalten. Die früher dokumentierte synthetische Klangdemo wird nicht mehr abgespielt.
+
+## Ringvereine, Video und heutige organisierte Kriminalität
+Neue Abschnitte: `#ringvereine` (Forschung und Geschichte), `#ringvereine-video` (Terra-X-Einbettung) und `#berlin-heute` (Vergleich mit Lagebildern und Begriffsklärung). Redaktionelle Texte stehen direkt in index.html; alle Nachweise und Nutzungsbedingungen unter [8]–[12] in sources.md.
+
+Das Nutzer-Video wird erst nach Klick in einem youtube-nocookie.com-Iframe ab 4:11 geladen. „Ganzes Video ab Anfang laden“ setzt den Einstieg auf 0. Autoplay bleibt deaktiviert. Solange niemand das Video lädt, gibt es keine Video-, Vorschaubild- oder YouTube-Anfrage. Nach dem Laden gelten die technischen Bedingungen des Drittanbieters; Wiedergabe oder Untertitel können regional oder durch den Anbieter eingeschränkt sein. Ein normaler YouTube-Link bleibt als Alternative vorhanden. Keine lokale Filmdatei, da keine freigegebene Downloadfassung festgestellt wurde. Für eine spätere autorisierte Originaldatei kann das Iframe durch einen nativen video-Player ersetzt werden; Rechte, Untertitel und Quellen dann ergänzen.
+
+Zwei PDFs liegen unverändert lokal unter assets/documents/: von Lampes Forschung (CC BY-NC-ND 4.0, Autor und Herausgeber vollständig nennen; nur nichtkommerziell und unverändert weitergeben) und das LKA-Lagebild OK Berlin 2024 (Quellenangabe nach Impressum). Für eine kommerzielle Wiederverwendung die Forschungs-PDF nicht ohne gesonderte Erlaubnis übernehmen.
+
+Die Vergleichstabelle lässt sich auf schmalen Geräten horizontal scrollen und per Tastatur fokussieren. Familienverbände, polizeilicher Begriff „Clankriminalität“ und OK werden getrennt erklärt. Zahlen aus 2024 und 2025 haben unterschiedliche Erhebungseinheiten; keine Addition und kein direkter Zahlenvergleich. Die Forschungsposition von 2022 wird als zeitgebunden ausgewiesen.
+
+Geprüft: Iframe vor Klick nicht vorhanden; nach Tastaturaktivierung Startparameter 251 und autoplay=0; Wechsel zum Anfang mit start=0. YouTube-Vorschau erfolgreich geladen. Responsive Ressourcenansicht bei 390 px: Inhaltsbreite 375 px, Dokumentbreite ebenfalls 375 px, keine horizontale Überbreite. Lokale PDF-Dateien und interne Quellenanker vorhanden.
