@@ -76,3 +76,13 @@ document.querySelector('#load-ring-video').addEventListener('click',()=>loadRing
 document.querySelector('#ring-video-start').addEventListener('click',()=>loadRingVideo(0));
 
 document.querySelector('#ring-video-chapter').addEventListener('click',()=>loadRingVideo(251));
+
+// SPIEGEL-TV-Reportage: Verbindung ausschliesslich nach bewusster Aktivierung.
+document.querySelector('#load-court-video').addEventListener('click',()=>{
+ const frame=document.createElement('iframe');
+ frame.src='https://www.youtube-nocookie.com/embed/cEjYt41uezk?autoplay=0&rel=0';
+ frame.title='SPIEGEL TV: Landgericht Berlin Moabit';
+ frame.allow='encrypted-media; picture-in-picture; fullscreen';frame.allowFullscreen=true;
+ frame.referrerPolicy='strict-origin-when-cross-origin';
+ document.querySelector('#court-video-player').replaceChildren(frame);
+});

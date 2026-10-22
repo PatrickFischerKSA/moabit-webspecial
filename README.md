@@ -122,3 +122,5 @@ Zwei PDFs liegen unverändert lokal unter assets/documents/: von Lampes Forschun
 Die Vergleichstabelle lässt sich auf schmalen Geräten horizontal scrollen und per Tastatur fokussieren. Familienverbände, polizeilicher Begriff „Clankriminalität“ und OK werden getrennt erklärt. Zahlen aus 2024 und 2025 haben unterschiedliche Erhebungseinheiten; keine Addition und kein direkter Zahlenvergleich. Die Forschungsposition von 2022 wird als zeitgebunden ausgewiesen.
 
 Geprüft: Iframe vor Klick nicht vorhanden; nach Tastaturaktivierung Startparameter 251 und autoplay=0; Wechsel zum Anfang mit start=0. YouTube-Vorschau erfolgreich geladen. Responsive Ressourcenansicht bei 390 px: Inhaltsbreite 375 px, Dokumentbreite ebenfalls 375 px, keine horizontale Überbreite. Lokale PDF-Dateien und interne Quellenanker vorhanden.
+
+Die zusätzliche SPIEGEL-TV-Reportage unter #gericht-reportage wird ebenfalls erst nach Klick und ohne Autoplay geladen. Direkter YouTube-Link als Fallback. Titel/Kanal sind über offizielle oEmbed-Metadaten geprüft; Datum und Transkript bleiben offene Recherche. Sehaufträge unterscheiden Verdacht und Urteil und vermeiden eine Gleichsetzung mit 1927.

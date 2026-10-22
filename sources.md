@@ -229,3 +229,14 @@ Das hier dokumentierte Bildpaar ersetzt die früheren grafischen Damals-/Heute-P
 
 ## Redaktionelle Vergleichsregel
 Historische Vereinigungen, heutige Familienverbände und kriminelle Tätergruppen werden nicht gleichgesetzt. Verglichen werden Mechanismen wie Zugehörigkeit, Ressourcen, Abschottung und Einfluss; die Nachweise müssen jeweils konkrete Personen, Handlungen und Strukturen betreffen. Erkenntnisse aus 2022, Berichtsjahre 2024/2025 und Recherchezeitpunkt 22.10.2026 werden getrennt ausgewiesen. Frühere offene Rechercheaufträge zu den Ringvereinen und zum Gegenwartsbezug sind durch die Ressourcen [8]–[12] teilweise abgearbeitet; konkrete historische Bestechungsfälle bleiben offen.
+
+## [13] SPIEGEL-TV-Reportage zum Strafgericht Moabit
+- Urheber / Kanal: DER SPIEGEL / SPIEGEL TV
+- Titel: Landgericht Berlin Moabit: Das größte Strafgericht Europas | SPIEGEL TV
+- Jahr / Veröffentlichungsdatum: noch zu prüfen; nicht aus dem Titel abgeleitet
+- Institution: DER SPIEGEL; Kanalzuordnung durch offizielle YouTube-oEmbed-Metadaten bestätigt
+- URL: https://www.youtube.com/watch?v=cEjYt41uezk
+- Metadaten: https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=cEjYt41uezk&format=json
+- Abrufdatum: 22.10.2026
+- Lizenz: keine offene Lizenz festgestellt; offizielle Einbettung erst nach Klick, keine lokale Kopie
+- Verwendung / Grenzen: ergänzende Ressource mit Sehaufträgen zu Justizöffentlichkeit und medialer Perspektive. Keine inhaltlichen Einzelbehauptungen aus ungeprüftem Filmtranskript. Grössenbehauptung im Anbietertitel nicht unabhängig geprüft; keine historische Belegfunktion für 1927.
